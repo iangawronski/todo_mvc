@@ -1,0 +1,12 @@
+<h1> Welcome to ToDo's Homepage </h1>
+
+  <%= link_to 'Profile Page', users_show_path(current_user) %>
+  <br>
+  ------------------------------------------------
+  <br>
+  <br>
+  <% @users.each do |u| %>
+    <%= u.email %>
+
+
+  <%end%>
